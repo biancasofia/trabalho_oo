@@ -3,33 +3,40 @@ package app.pessoas;
 import java.io.FileWriter;
 import java.io.PrintWriter;
 import java.io.IOException;
+import javax.swing.JOptionPane;
 
 public class Pessoa {
     
-    protected double rendimento;
-    protected  String email;
-    protected  String  nome;
+    private double rendimento;
+    private String email;
+    private String nome;
 
     public Pessoa(String nome,String email, double rendimento ) {
         this.setEmail(email);
         this.setNome(nome);
         this.setRendimento(rendimento);
-    }   
+    }
+
     public double getRendimento() {
         return rendimento;
     }
+
     public void setRendimento(double rendimento) {
         this.rendimento = rendimento;
     }
+
     public String getEmail() {
         return email;
     }
+
     public void setEmail(String email) {
         this.email = email;
     }
+
     public String getNome() {
         return nome;
     }
+    
     public void setNome(String nome) {
         this.nome = nome;
     }
@@ -42,7 +49,7 @@ public class Pessoa {
             pw.close();
             fw.close();
 
-            System.out.println("\nPessoa cadastrada com sucesso!");
+            JOptionPane.showMessageDialog(null, "Pessoa cadastrada com sucesso!");
 
         } catch(IOException err) {
             System.out.println("\nErro de cadastro." + err);
