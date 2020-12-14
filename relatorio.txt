@@ -1,0 +1,15 @@
+O projeto foi dividido nas seguintes interfaces:
+app-que contem a main
+cadastros-com as classes para cadastrar as pessoas e despesas
+despesas-com as classes de categoria, despesa, subcategoria
+excecoes-com todas as exceções exigidas
+pessoas-com a classe Pessoa
+relatorios- com as classes para pagamento, impressão de dados e leitura dos dados.
+
+-Na main foi feito o menu principal.
+-Nas classes para cadastro foram lançadas as condições para as exceções e foi chamado o metodo para salvar o dado advinda da classe Despesa
+ e da classe Pessoa.
+-A classe para o calculo dos pagamentos contém o método para o calculo igualitário e um para o calculo proporcional
+-É na classe de leitura de dados que se encontra a parte de persistência em arquivos, em que o arquivo txt é criado 
+após o usuário cadastrar pessoas/despesas, contendo também o método para apagar os dados para novos cadastros.
+obs: foram criados mais classes e métodos após o diagrama inicial, já que foi melhor estudado a forma de como fazer o projeto.
